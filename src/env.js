@@ -10,8 +10,8 @@ export const env = createEnv({
     // DATABASE_URL: z.string().url(),
     POSTGRES_PRISMA_URL: z.string().url(),
     POSTGRES_URL_NON_POOLING: z.string().url(),
-    GOOGLE_CLIENT_ID: z.string().url(),
-    GOOGLE_CLIENT_SECRET: z.string().url(),
+    GOOGLE_CLIENT_ID: z.string(),
+    GOOGLE_CLIENT_SECRET: z.string(),
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),
